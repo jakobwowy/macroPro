@@ -1,0 +1,9 @@
+[gcode_macro _jm_options]
+# These are examples of some likely customizations:
+
+gcode: # This line is required by Klipper.
+# Any code you put here will run at klipper startup, after the initialization
+# for these macros.
+
+# This line includes all the standard macros.
+[include macroPro/*.cfg]

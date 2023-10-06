@@ -1,0 +1,1 @@
+global and variable management inspired by https://github.com/jschuh/klipper-macros
