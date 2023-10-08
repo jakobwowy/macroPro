@@ -17,7 +17,7 @@ START_PRINT_CUSTOM T_BED=[first_layer_bed_temperature] T_EXTRUDER=[first_layer_t
   - FLOAT: Filament diameter used by the slicer
 - Continuous Printing / Part ejection
   - EJECT
-    - BOOL: TRUE -> EXECUTE EJECT gcode after on END_PRINT
+    - BOOL: 1 -> EXECUTE EJECT gcode after on END_PRINT, 0 -> no eject (eject part by hand)
   - T_RELEASE
     - FLOAT: Wait for temperature to eject part
   - PART_HEIGHT
