@@ -2,9 +2,24 @@ global and variable management inspired by https://github.com/jschuh/klipper-mac
 
 ## Install
 
-Clone in config folder
+- Clone in config folder
 
-git clone https://github.com/jakobwowy/macroPro.git
+  git clone https://github.com/jakobwowy/macroPro.git
+- Extend setup.cfg
+  - Customize parameter
+  - include macros
+```
+[gcode_macro _jm_options]
+# These are examples of some likely customizations:
+# Height in mm from the bottom of the gantry to the top of the print bed
+variable_gantry_height: 38
+gcode: # This line is required by Klipper.
+# Any code you put here will run at klipper startup, after the initialization
+# for these macros.
+
+# This line includes all the standard macros.
+[include macroPro/*.cfg]
+```
 
 ### Prusa Slicer
 
