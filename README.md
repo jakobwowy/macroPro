@@ -8,6 +8,18 @@ global and variable management inspired by https://github.com/jschuh/klipper-mac
 - Extend setup.cfg
   - Customize parameter
   - include macros
+
+- Moonraker Update Manager
+```
+[update_manager macro-pro]
+type: git_repo
+origin: https://github.com/jakobwowy/macroPro.git
+path: ~/printer_1_data/config/macroPro # UPDATE THIS FOR YOUR PATH!!!
+primary_branch: main
+is_system_service: False
+managed_services: klipper
+```
+
 ```
 [gcode_macro _jm_options]
 # These are examples of some likely customizations:
